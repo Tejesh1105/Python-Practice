@@ -13,3 +13,18 @@ elif 12 <= hour < 17:
     print("Good Afternoon Sir")
 else:
     print("Good Evening Sir")
+
+
+#Harry Bhai's method.
+# import time
+
+# timestamp = int(time.strftime('%H'))
+
+# if 5 <= timestamp < 12:
+#     print("Good Morning Sir")
+# elif 12 <= timestamp < 17:
+#     print("Good Afternoon Sir")
+# else:
+#     print("Good Evening Sir")
+
+#Or we can use datetime module too.
