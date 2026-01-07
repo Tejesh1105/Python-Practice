@@ -1,0 +1,13 @@
+#Below code emulates do while loop in Python.
+# Do-While Loop Syntax
+#do {
+  #// code block to be executed
+#} while (condition);
+
+# Do-While Loop Python Code.
+i = 88
+while True:
+    print(i)
+    i = i + 1
+    if i > 100:
+        break
