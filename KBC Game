@@ -1,0 +1,28 @@
+questions = [
+    "1) What is the capital of France?\nA. Berlin\nB. Madrid\nC. Paris\nD. Rome",
+    "2) Which language is used to write Python programs?\nA. English\nB. Python\nC. Java\nD. C++",
+    "3) What is 5 * 6?\nA. 11\nB. 30\nC. 56\nD. 25",
+    "4) Who developed Python?\nA. Dennis Ritchie\nB. James Gosling\nC. Guido van Rossum\nD. Elon Musk"
+]
+
+answers = ["C", "B", "B", "C"]
+prize_money = [1000, 5000, 200000, 1000000]
+
+money_won = 0
+
+for i in range(len(questions)):
+    print("\n" + questions[i])
+    user_answer = input("Your answer (A/B/C/D): ").upper()
+
+    if user_answer == answers[i]:
+        money_won = prize_money[i]
+        print(f" Correct! You won ₹{money_won}")
+    else:
+        print(" Wrong answer!")
+        print(f"You take home ₹{money_won}")
+        break
+
+else:
+    print("\n  CONGRATULATIONS!")
+    print(f"You are a MILLIONAIRE! Total money won: ₹{money_won}")
+        
