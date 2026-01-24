@@ -1,0 +1,13 @@
+while True:
+    try:
+        fg = input("Enter a number between 5 and 9: ")
+        number = int(fg)
+
+        if number < 5 or number > 9:
+            raise ValueError("Number must be between 5 and 9")
+
+        print(number)
+        break  # valid input → exit loop
+
+    except ValueError:
+        print("Please enter a valid integer between 5 and 9")
