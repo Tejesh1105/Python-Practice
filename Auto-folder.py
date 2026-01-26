@@ -1,6 +1,6 @@
 import os
 
-if(not os.path.exists("Devops')):
+if(not os.path.exists("Devops")):
     os.mkdir("Devops")                  
 
 for mk_folder in range(0, 100):
